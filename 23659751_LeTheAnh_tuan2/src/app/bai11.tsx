@@ -1,18 +1,16 @@
-import React from 'react'
-import { View } from 'react-native'
-import ErrorHandling from '@/components/ErrorHandling'
+import ProductSearch from '@/components/ProductSearch'
 import { Link } from 'expo-router'
+import { View } from 'react-native'
 
-function bai3() {
+function bai11() {
   return (
-    <View>
-        <Link href={"/"} style={{backgroundColor:"pink", width:100, borderColor: "black", borderWidth:1}}>
+    <View style={{ margin: 20 }}>
+      <Link href={'/'} style={{ backgroundColor: 'pink', width: 100, borderColor: 'black', borderWidth: 1 }}>
         Trang chủ
-        </Link>
-        <br />
-      <ErrorHandling></ErrorHandling>
+      </Link>
+      <ProductSearch />
     </View>
   )
 }
 
-export default bai3
+export default bai11
